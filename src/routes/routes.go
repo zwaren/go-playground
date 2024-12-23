@@ -9,6 +9,6 @@ import (
 func SetupRoutes() *mux.Router {
 	router := mux.NewRouter()
 	router.HandleFunc("/", handlers.HomeHandler).Methods("GET")
-	router.HandleFunc("/hello/{user}", handlers.HelloHandler).Methods("GET")
+	router.HandleFunc("/hello/{username}", handlers.HelloHandler).Methods("GET")
 	return router
 }

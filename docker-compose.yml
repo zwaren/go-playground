@@ -1,19 +1,19 @@
 version: '3.8'
 
 services:
-  web:
-    build: .
-    container_name: my-go-web-server
-    ports:
-      - "8080:8080"
-    depends_on:
-      - db
-    environment:
-      - DB_HOST=db
-      - DB_PORT=5432
-      - DB_USER=postgres
-      - DB_PASSWORD=postgres
-      - DB_NAME=mydatabase
+  # web:
+  #   build: .
+  #   container_name: my-go-web-server
+  #   ports:
+  #     - "8080:8080"
+  #   depends_on:
+  #     - db
+  #   environment:
+  #     - DB_HOST=db
+  #     - DB_PORT=5432
+  #     - DB_USER=postgres
+  #     - DB_PASSWORD=postgres
+  #     - DB_NAME=mydatabase
 
   db:
     image: postgres:13
